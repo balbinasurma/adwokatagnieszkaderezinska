@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #084624;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.main img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+.main .content
+{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.main .content h2
+{
+    color: #fff;
+    font-size: 40px;
+}
+.main .content p
+{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.main header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 10000;
+}
+.main header .logo
+{
+    color:#fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: ;uppercase
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.main header .toggle
+{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background: url(toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.imgBx {
+    width: 300px; /* tutaj ustaw żądaną szerokość diva */
+    height: 950px; /* tutaj ustaw żądaną wysokość diva */
+    overflow: hidden; /* ukrywa nadmiar treści */
+    position: relative; /* umożliwia stosowanie pozycji absolutnej wewnątrz */
+}
+.imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* dopasowuje obraz do kontenera zachowując proporcje */
+    position: absolute; /* pozycjonuje obraz absolutnie względem kontenera */
+    top: 0;
+    left: 0;
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.about .contentBx
+{
+    background: rgb(157, 154, 140);
+    padding: 60px;
+    width: 50%;
+}
+.imgBx
+{
+    width:300px;
+}
+#myButton
+{
+    background-color: hsl(300, 1%, 83%);
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 8px;
+    margin-bottom: 8px;
+    border-color: white;
+    border-radius: 3%; 
+}
+#myButton:hover
+{
+	background-color:rgb(187, 196, 198)
+}
+.heading
+{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+.text
+{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.text666
+{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.text1
+{
+    color: hwb(296 8% 46%);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+.about .imgBx
+{
+    background: url(window.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.card
+{
+    background:hwb(189.06deg 47.84% 24.41%);
+    padding: 100px;
+    text-align: center;
+}
+.smallfoto
+{
+    width: 300px;
+    height: 500px;
+}
+
+.imgBx666
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+.card .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.card .container .serviceBx
+{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .container .serviceBx img
+{
+    max-width: 100px;
+}
+.card .container .serviceBx h2
+{
+    font-weight:500;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+.serviceBx img
+{
+    border-radius: 30%; /* Sprawia, że obraz jest okrągły */
+    border: 3px solid black;
+}
+
+.tech
+{
+    background: #565589;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tech .contentBx
+{
+    max-width: 800px;
+}
+.tech .imgBx
+{
+    max-width: 250px;
+}
+.tech .imgBx img
+{
+    max-width: 100%;
+}
+.bootcamp
+{
+    background: ;
+    padding: 100px;
+    text-align: center;
+}
+.bootcamp h2
+{
+    background:black ;
+}
+.bootcamp .imgBx
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.bootcamp .imgBx img
+{
+    max-width: 300px;
+    margin: 10px;
+    cursor: pointer;
+}
+.bootcamp .imgBx img:hover
+{
+    opacity: ;
+}
+.opinions
+{
+    position: relative;
+    padding:100px;
+    background: hwb(341 25% 45%);
+    text-align: center;
+}
+.opinions .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.opinions .container .contentBx
+{
+    background: #fff;
+    padding: 60px 50px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+}
+.opinions .container .contentBx p
+{
+    font-style: italic;
+}
+.opinions .container .contentBx h3
+{
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #3475ca;
+}
+.contact
+{
+    padding: 70px;
+    background: hwb(341 9% 26%);
+    text-align: center;
+}
+.contact p
+{
+ font-size: 20px;
+ color:hwb(341 9% 26%);
+}
+.contact1
+{
+    padding: 70px;
+    background: white;
+    text-align: center;
+}
+.contact1 p
+{
+ font-size: 20px;
+
+}
+.imgBx2
+{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        position: absolute;
+}
+.imgBx22
+{
+    width: 100%; 
+}
+.imgBx22 img
+{
+    width: 100%; 
+}
+.redbg
+{
+    background: hwb(341 9% 26%); !important;s
+    background-size: cover;
+    background-position: center;
+}
+#displayText {
+    display: none;
+  }
+.form
+{
+    margin-bottom: 40px;
+}
+.form .inputBx input
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 0.5px solid #fff;
+}
+.form .inputBx input::placeholder
+{
+    color:#fff;
+}
+.form .inputBx textarea
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    min-height: 150px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form .inputBx textarea::placeholder
+{
+    color:#fff;
+}
+.form .inputBx input[type="submit"]
+{
+   
+    padding: 10px;
+    background:hwb(189.06deg 47.84% 24.41%);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 20px;
+    border-color: white;
+}
+.form .inputBx input[type="submit"]:hover
+{
+    background: hsl(174, 24%, 84%);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#displayText
+{
+    font-size: 13px;
+}
+.footer
+{
+    background-color: #333333c7;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color:white;
+}
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li
+{
+    list-style: none;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer ul li a img
+{
+    filter: invert(1);
+    max-width: 20px;
+}
+@media (max-width: 991px)
+{
+    .main
+    {
+        padding: 50px;
+    }
+    .main header
+    {
+        padding: 20px 50px;
+    }
+    .main .content h2
+    {
+        font-size: 36px;
+    }
+    .main .content p
+    {
+        font-size: 17px;
+    }
+    .about
+    {
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx
+    {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: left;
+    }
+    .card
+    {
+        padding: 50px;
+    }
+    .card .container
+    {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .card .container .serviceBx
+    {
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .tech
+    {
+        padding: 50px;
+        padding-top:300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tech .imgBx
+    {
+        margin-top: 40px;
+        max-width: 250px;
+    }
+    .bootcamp
+    {
+        padding: 50px;
+    }
+    .bootcamp .imgBx
+    {
+        justify-content: center;
+    }
+    .opinions
+    {
+        padding: 50px;
+    }
+    .opinions .contentBx
+    {
+        padding: 60px 40px;
+        max-width: 550px;
+        margin-bottom: 40px;
+        
+    }
+    .opinions .contentBx:last-child
+    {
+        margin-bottom: 0px;
+        
+    }
+    .contact
+    {
+        padding: 50px;
+    }
+    .footer
+    {
+        padding: 20px 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer ul
+    {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px)
+{
+    .main .content h2
+    {
+        font-size: 36px;
+    }
+    .main .content p
+    {
+ 
+    }
+}
